@@ -80,6 +80,15 @@ This approach reflects real-world SIEM investigation, where searches are refined
 
 ---
 
+## Analyst Notes
+
+- Repeated SSH authentication failures from a single source IP were observed within a short time window, indicating a likely brute-force attempt rather than user error.
+- Correlation alerts provided higher confidence than individual authentication failures, reducing alert fatigue during investigation.
+- No successful authentication was observed during this activity, suggesting the attack was unsuccessful but still required review due to frequency and pattern.
+- Source IPs and usernames were reviewed to determine whether the activity was external or internally generated.
+
+---
+
 ## MITRE ATT&CK Mapping
 
 - **T1110 – Brute Force**
